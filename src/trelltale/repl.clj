@@ -1,7 +1,9 @@
 (ns trelltale.repl
-  (:use trelltale.handler
-        ring.server.standalone
-        [ring.middleware file-info file]))
+  (:use [trelltale.handler]
+        [ring.server.standalone]
+        [clojure.tools.namespace.repl :only (refresh)]
+        [ring.middleware file-info file])
+  (:require [trelltale.models.trello :as trello]))
 
 (defonce server (atom nil))
 
@@ -32,5 +34,3 @@
 (defn stop-server []
   (.stop @server)
   (reset! server nil))
-
-
