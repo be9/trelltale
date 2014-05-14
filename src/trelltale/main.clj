@@ -1,5 +1,5 @@
 (ns trelltale.main
-  (:gen-class)
+  (:gen-class :main true)
   (:require [ring.adapter.jetty :as jetty]
             [trelltale.handler]))
 
