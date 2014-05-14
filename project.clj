@@ -12,6 +12,7 @@
                  [com.taoensso/timbre "3.2.1"]
                  [ring/ring-json "0.3.1"]
                  [clj-time "0.7.0"]
+                 [org.clojure/tools.namespace "0.2.4"]
                  [ring-server "0.3.1"]]
   :plugins [[lein-ring "0.8.7"]]
   :ring {:handler trelltale.handler/app
@@ -24,4 +25,4 @@
    {:ring
     {:open-browser? false, :stacktraces? false, :auto-reload? false}}
    :dev
-   {:main trelltale.repl :dependencies [[ring-mock "0.1.5"] [org.clojure/tools.namespace "0.2.4"] [ring/ring-devel "1.2.2"]]}})
+   {:main trelltale.repl :dependencies [[ring-mock "0.1.5"] [ring/ring-devel "1.2.2"]]}})
