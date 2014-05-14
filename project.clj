@@ -19,6 +19,7 @@
          :destroy trelltale.handler/destroy}
   :aot :all
   :main trelltale.repl
+  :min-lein-version "2.0.0"
   :profiles
   {:production
    {:ring
