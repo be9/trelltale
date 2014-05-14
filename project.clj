@@ -20,6 +20,7 @@
          :destroy trelltale.handler/destroy}
   :aot :all
   :min-lein-version "2.0.0"
+  :uberjar-name "trelltale-standalone.jar"
   :profiles
   {:production
    {:main trelltale.main
