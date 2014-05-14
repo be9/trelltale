@@ -4,9 +4,9 @@
             [ring.middleware.file-info :refer [wrap-file-info]]
             ;[ring.middleware.params    :refer [wrap-params]]
             [ring.middleware.json      :refer [wrap-json-params]]
-            [hiccup.middleware :refer [wrap-base-url]]
-            [compojure.handler :as handler]
-            [compojure.route :as route]
+            [hiccup.middleware         :refer [wrap-base-url]]
+            [compojure.handler         :as handler]
+            [compojure.route           :as route]
             [noir.util.middleware :as nm]
             [trelltale.routes.main :refer [main-routes]]))
 

@@ -10,5 +10,7 @@
   (GET add-hook-template [board-id]
     (handlers/add-hook board-id))
 
+  (GET remove-hook-template [hook-id] (handlers/remove-hook hook-id))
+
   (HEAD trello-callback-template [] (handlers/trello-check))
   (POST trello-callback-template {params :params} (handlers/trello-callback params)))

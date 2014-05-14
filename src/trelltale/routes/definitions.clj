@@ -9,4 +9,6 @@
 
 (defroute add-hook "/hooks/add/:board-id")
 
+(defroute remove-hook "/hooks/remove/:hook-id")
+
 (defroute trello-callback "/trello/callback")
