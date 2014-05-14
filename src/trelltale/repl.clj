@@ -1,4 +1,5 @@
 (ns trelltale.repl
+  (:gen-class)
   (:use [trelltale.handler]
         [ring.server.standalone]
         [clojure.tools.namespace.repl :only (refresh)]
