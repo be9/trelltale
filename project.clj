@@ -18,11 +18,10 @@
          :init    trelltale.handler/init
          :destroy trelltale.handler/destroy}
   :aot :all
-  :main trelltale.repl
   :min-lein-version "2.0.0"
   :profiles
   {:production
    {:ring
     {:open-browser? false, :stacktraces? false, :auto-reload? false}}
    :dev
-   {:dependencies [[ring-mock "0.1.5"] [org.clojure/tools.namespace "0.2.4"] [ring/ring-devel "1.2.2"]]}})
+   {:main trelltale.repl :dependencies [[ring-mock "0.1.5"] [org.clojure/tools.namespace "0.2.4"] [ring/ring-devel "1.2.2"]]}})
