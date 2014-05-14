@@ -8,7 +8,8 @@
             [hiccup.util]
             [noir.session :as session]))
 
-(defn home []
+(defn home [req]
+  #_(print req)
   (layout/common "Home" [:h1 "Hello World!"]))
 
 (defn boards []

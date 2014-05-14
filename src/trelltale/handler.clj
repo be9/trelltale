@@ -7,8 +7,8 @@
             [hiccup.middleware         :refer [wrap-base-url]]
             [compojure.handler         :as handler]
             [compojure.route           :as route]
-            [noir.util.middleware :as nm]
-            [trelltale.routes.main :refer [main-routes]]))
+            [noir.util.middleware      :as nm]
+            [trelltale.routes.main     :refer [main-routes]]))
 
 (defn init []
   (println "trelltale is starting"))

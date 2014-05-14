@@ -4,7 +4,7 @@
             [trelltale.routes.definitions :refer :all]))
 
 (defroutes main-routes
-  (GET root-template     [] (handlers/home))
+  (GET root-template     request (do #_(println 123) (println request) (handlers/home request)) )
   (GET boards-template   [] (handlers/boards))
   (GET hooks-template    [] (handlers/hooks))
   (GET add-hook-template [board-id]
